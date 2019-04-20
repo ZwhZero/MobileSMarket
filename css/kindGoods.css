@@ -1,0 +1,46 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#container{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+}
+.goodsbox{
+	margin: 5px;/*外边距*/
+	width: 46%;
+	height: 180px;/*180px*/
+	float: left;
+	border: 1px solid #FFFFFF;
+	/*box-shadow: 0 0 5px #FFFFFF;*/
+	border-radius: 5px;
+}
+.goodsbox .box_img{
+	width: 100%;
+	height: auto;/*138px*/
+}
+.box_img img{
+	width: 100%;
+	height: 138px;
+	border-radius: 5px;
+}
+.goodsbox p{
+	font-family: "宋体";
+	text-align:left;
+	text-indent: 1em;
+}
+.goodsbox .box_name{
+	color: black;
+	font-weight: bold;
+	font-size: smaller;
+}
+.goodsbox .box_price{
+	color: chocolate;
+	font-weight: bold;
+}
+.goodsbox a:link,a:visited{
+	text-decoration: none;
+	color: #000000;
+}

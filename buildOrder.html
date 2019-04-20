@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>核对订单信息</title>
+		<!-- meta使用viewport以确保页面可自由缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 引入 jQuery Mobile 样式 -->
+    	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/buildOrder.css"/>
+    	<!-- 引入 jQuery 库 -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="js/buildOrder.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	
+	<body>
+		<div data-role="page" id="buildOrderPage">
+			<div data-role="header" data-position="fixed">
+				<a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
+				<h1>核对订单信息</h1>
+			</div>
+		
+			<div data-role="main" class="ui-content">
+				<h2>※我的订单</h2>
+				<div id="orderContainer">
+					<div id="orderItemList">
+						<!--js+Ajax动态加载订单内的条目内容-->
+						<!--<div class="orderItembox">
+							<div class="box_name">
+								<span class="itemName">特仑苏</span>
+							</div>
+							<div class="box_price">
+								<span class="itemPrice">￥5.0</span>
+							</div>
+							<div class="box_number">
+								<span class="itemNum">2</span>
+							</div>
+						</div>-->
+					</div>
+					
+					<!--统计信息模块-->
+					<div id="orderTotal">•合计<br />
+						<div class="totalNum">
+							总数量为：<span id="totalNumber">4</span>
+						</div>
+						<div class="totalMon">
+							总价格为：<span id="totalMoney">￥20.0</span>
+						</div>
+					</div>
+					<br /><hr />
+					
+					<!--订单信息模块-->
+					<div id="orderMes">•订单信息<br />
+						<div class="orderIdBox">
+							订单号：<span id="orderId">1</span>
+						</div>
+						<div class="createTimeBox">
+							创建时间：<span id="createTime">2019-04-01 14:44:55</span>
+						</div>
+						<div class="userNameBox">
+							用户名：<span id="userName">zero</span>
+						</div>
+						<div class="phoneBox">
+							联系电话：<input id="userPhone" type="text" value="11325865811"/>
+						</div>
+						<div class="addressBox">
+							地址：<input id="userAddress" type="text" value="广州航海学院"/>
+						</div>
+						<div class="remarkBox">
+							留言：<input id="userRemark" type="text" value="尽快发货..."/>
+						</div>
+					</div>
+					<hr /><br />
+				</div>
+				<br />
+				<div id="toSubmit" data-theme="b">
+					<a href="javascript:void(0);" class="ui-btn" id="submitOrder">确认订单</a>
+				</div>
+					
+			</div>
+		
+			<div data-role="footer" style="text-align: center"  data-position="fixed">
+				<p>Zero Supermarket @William</p>
+			</div>
+		</div>
+		
+		
+	</body>
+	
+</html>

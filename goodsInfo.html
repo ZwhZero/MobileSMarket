@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<!-- meta使用viewport以确保页面可自由缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 引入 jQuery Mobile 样式 -->
+    	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/goodsInfo.css"/>
+    	<!-- 引入 jQuery 库 -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="js/goodsInfo.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	
+	<body>
+		
+		<div data-role="header">
+			<a href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" id="gInfoTCcart">返回主页</a>
+			<h1>商品详情</h1>
+			<button onclick="location.replace(location);" class="ui-btn ui-corner-all ui-shadow ui-icon-refresh ui-btn-icon-left">刷新</button>	
+		</div>
+			
+		<div data-role="main" class="ui-content">
+			<!--<button onclick="getgId()">获取id</button>-->
+			<p>若页面无法正常显示请刷新页面！</p><br />
+			<div id="container">
+				<div class="goodsbox">
+					<!--<div class="box_left">-->
+						<div class="box_img">
+							<img  id="imgurl" src="#" />
+						</div>
+					<!--</div>-->
+					<div class="box_font">
+						<div class="box_name">商品名:
+							<span id="gname">null</span>
+						</div>
+						<div class="box_description">
+							<span id="gdescription">null</span>
+						</div>
+						<div class="box_price">价 格：
+							<span id="gprice">0</span>
+						</div>
+						<div class="box_sellcount">销 量：
+							<span id="gsellcount">0</span>
+						</div>
+						<div class="box_count">库 存：
+							<span id="gcount">0</span>
+						</div>
+					</div>
+					<hr />
+					<br />
+					<div id="selectCount">
+						购买数量：<input type="text" id="inputCount" value="1"></input>
+						<input type="button" id="addtocart" value="加入购物车" class="ui-btn" />
+					</div>
+					<br />
+					<div id="message">
+						<!--当前购物车状态<br />-->
+						<!--购物车总数量为:&nbsp; <span id="totalNumber"></span> &nbsp;<br />-->
+						<!--总价格为：&nbsp; <span id="totalMoney"></span>-->
+						<a href="shoppingCart.html" class="ui-btn" data-theme="b">前往购物车</a>
+					</div>
+					<br />
+					
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" style="text-align: center"  data-position="fixed">
+			<p>Zero Supermarket @William</p>
+		</div>
+		<!--<script type="text/javascript">
+			if(document.getElementById("imgurl").src == "#") {
+				location.replace(location);/*刷新*/
+			}
+		</script>-->
+		
+	</body>
+</html>

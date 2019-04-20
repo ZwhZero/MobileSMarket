@@ -1,0 +1,57 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#container{
+	margin: 0 auto;
+}
+.goodsbox{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.box_img{
+	width: 100%;
+	height: auto;
+}
+.box_img img{
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+.box_font{
+	font-family: "宋体";
+	color: black;
+	font-size: larger;
+	text-indent: 1em;
+}
+.box_name{
+	margin: 5px auto;
+}
+.box_description{
+	margin: 5px auto;
+	color: #CCCCCC;
+	font-weight: bolder;
+}
+.box_price{
+	margin: 5px auto;
+}.box_price span{
+	color: chocolate;
+	font-weight: bold;
+}
+.box_sellcount{
+	margin: 5px auto;
+}
+.box_count{
+	margin: 5px auto;
+}
+#message{
+	background-color: #AAAAAA;
+	font-family: "微软雅黑";
+	margin: 5px auto;
+	padding: 5px;
+}#message span{
+	color: blue;
+	font-weight: bold;
+}

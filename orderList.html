@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- meta使用viewport以确保页面可自由缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 引入 jQuery Mobile 样式 -->
+    	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/orderList.css"/>
+    	<!-- 引入 jQuery 库 -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="js/orderList.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	
+	<body>
+		<div data-role="page" id="buildOrderPage">
+			<div data-role="header" data-position="fixed">
+				<a href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" id="oListToIndex">主页</a>
+				<h1>历史订单</h1>
+			</div>
+		
+			<div data-role="main" class="ui-content">
+				<h2>※历史订单</h2>
+				<div id="orderContainer">
+					<!--js+Ajax动态加载所有订单的相关内容-->
+					<!--<div class="oneOrder">
+						<div class="oneOrderItemList">
+							<div class="orderItembox">
+								<div class="box_name">
+									<span class="itemName">特仑苏</span>
+								</div>
+								<div class="box_price">
+									<span class="itemPrice">￥5.0</span>
+								</div>
+								<div class="box_number">
+									<span class="itemNum">2</span>
+								</div>
+							</div>
+							<div class="orderItembox">
+								<div class="box_name">
+									<span class="itemName">特仑苏</span>
+								</div>
+								<div class="box_price">
+									<span class="itemPrice">￥5.0</span>
+								</div>
+								<div class="box_number">
+									<span class="itemNum">2</span>
+								</div>
+							</div>
+						</div>-->
+						<!--统计信息模块-->
+						<!--<div class="orderTotal">
+							<div class="totalMessage">
+								<span class="tm1">一共有</span>
+								<span class="totalNumber">4</span>
+								<span class="tm2">件商品；合计 </span>
+								<span class="totalMoney">20.0</span>
+								<span class="tm3">  元</span>
+							</div>
+						</div>-->
+						<!--<hr />-->
+						<!--订单信息模块-->
+						<!--<div class="orderMes">•订单信息<br />
+							<div class="orderIdBox">
+								订单号：<span class="orderId">1</span>
+							</div>
+							<div class="createTimeBox">
+								创建时间：<span class="createTime">2019-04-01 14:44:55</span>
+							</div>
+							<div class="userNameBox">
+								用户名：<span class="userName">zero</span>
+							</div>
+							<div class="phoneBox">
+								联系电话：<span class="userPhone">11325865811</span>
+							</div>
+							<div class="addressBox">
+								地址：<span class="userAddress">广州航海学院</span>
+							</div>
+							<div class="remarkBox">
+								留言：<span class="userRemark">尽快发货...</span>
+							</div>
+						</div>
+					</div>-->
+					
+				</div>
+				<br />
+				<div id="pageBottom" data-theme="b">
+					<a href="javascript:void(0);" class="ui-btn" id="theBottom">这是底部</a>
+				</div>
+					
+			</div>
+		
+			<div data-role="footer" style="text-align: center"  data-position="fixed">
+				<p>Zero Supermarket @William</p>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,49 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#orderContainer{
+	position: relative;
+	margin: 5px auto;
+	width: 100%;
+	height: auto;
+	background-color: snow;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+}
+.orderItembox{
+	margin: 5px auto;
+	padding: 5px;
+	height: 25px;
+	font-family: "宋体";
+	font-size: large;
+	background-color: snow;
+	border: 2px solid #DDDDDD;
+	border-radius: 5px;
+}
+.box_name{
+	width: 45%;
+	height: auto;
+	float: left;
+	font-size: smaller;
+}
+.box_price{
+	width: 35%;
+	height: auto;
+	float: left;
+	color: chocolate;
+}
+.box_number{
+	width: 20%;
+	height: auto;
+	float: left;
+}
+#totalMoney{
+	color: chocolate;
+	font-size: large;
+}
+
+
+
+
+

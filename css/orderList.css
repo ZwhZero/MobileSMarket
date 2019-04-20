@@ -1,0 +1,68 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#orderContainer{ /*订单容器-全部订单*/
+	position: relative;
+	margin: 5px auto;
+	width: 100%;
+	height: auto;
+	/*background-color: snow;*/
+	/*border: 2px solid #FFFFFF;*/
+	/*border-radius: 10px;*/
+}
+.oneOrder{ /*单个订单*/
+	margin: 20px auto;
+	border: 2px solid #DDDDDD;
+	border-radius: 10px;
+}
+.oneOrder .oneOrderItemList{ /*订单条目容器-全部条目*/
+	margin: 10px auto;
+	background-color: snow;
+	/*border: 2px solid #FFFFFF;*/
+	border-radius: 5px;
+}
+.orderItembox{ /*单个条目*/
+	margin: 5px auto;
+	/*padding: 5px;*/
+	height: 20px;
+	font-family: "宋体";
+	font-size: large;
+	background-color: snow;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+.box_name{
+	width: 45%;
+	height: auto;
+	float: left;
+	font-size: smaller;
+}
+.box_price{
+	width: 35%;
+	height: auto;
+	float: left;
+	color: chocolate;
+}
+.box_number{
+	width: 20%;
+	height: auto;
+	float: left;
+}
+.totalMoney{
+	color: chocolate;
+	font-size: large;
+}
+.orderTotal{
+	margin: 10px 5px;
+	text-align: right;
+	text-indent: 1em;
+	font-size: small;
+}
+.orderMes{
+	/*border: 2px solid #E6E6E6;*/
+	margin: 5px auto;
+	/*background-color: snow;*/
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}

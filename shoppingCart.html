@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车页面</title>
+		<!-- meta使用viewport以确保页面可自由缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 引入 jQuery Mobile 样式 -->
+    	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css"/>
+    	<!-- 引入 jQuery 库 -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="js/shoppingCart.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	
+	<body>
+		<div data-role="page" id="cartPage">
+			<div data-role="header" data-position="fixed">
+				<a href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" id="cartToIndex">主页</a>
+				<h1>购物车</h1>
+			</div>
+		
+			<div data-role="main" class="ui-content">
+				<h2>※我的购物车</h2>
+				<div id="container">
+					<!--js+Ajax动态加载购物车内的内容-->					
+					<!--<div class="itembox">
+						<div class="box_name">
+							<span class="itemName">特仑苏</span>
+						</div>
+						<div class="box_price">
+							<span class="itemPrice">￥5.0</span>
+						</div>
+						<div class="box_number">
+							<button class="bt_minus" data-role="none"> - </button>
+							<span class="itemNum">2</span>
+							<button class="bt_add" data-role="none"> + </button>
+						</div>
+						<div class="box_delete">
+							<a href="" class="bt_del" data-role="none">删除</a>
+						</div>
+					</div>-->
+				</div>
+					
+				<!--统计模块-->
+				<br /><hr />
+				<div id="cartTotal">合计：<br />
+					<div class="totalNum">
+						总数量为：<span id="totalNumber">0</span>
+					</div>
+					<div class="totalMon">
+						总价格为：￥<span id="totalMoney">0.0</span>
+					</div>
+				</div>
+				<br /><hr /><br />
+				<div id="toSubmit" data-theme="b">
+					<a href="javascript:void(0);" class="ui-btn" id="submitCart">前往结算</a>
+				</div>
+					
+			</div>
+		
+			<div data-role="footer" style="text-align: center"  data-position="fixed">
+				<p>Zero Supermarket @William</p>
+			</div>
+		</div>
+		
+	</body>
+</html>

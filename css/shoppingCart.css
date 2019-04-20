@@ -1,0 +1,63 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#container{
+	position: relative;
+	margin: 5px auto;
+	width: 100%;
+	height: auto;
+}
+.itembox{
+	margin: 5px auto;
+	padding: 5px;
+	height: 25px;
+	font-family: "宋体";
+	font-size: large;
+	background-color: snow;
+	border: 2px solid #DDDDDD;
+	border-radius: 5px;
+}
+/*.box_id{
+	width: 10%;
+	float:left ;
+}*/
+.box_name{
+	width: 35%;
+	height: auto;
+	float: left;
+	font-size: smaller;
+}
+.box_price{
+	width: 22%;
+	height: auto;
+	float: left;
+	color: chocolate;
+}
+.box_number{
+	width: 30%;
+	height: auto;
+	float: left;
+}.box_number button{
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	line-height: 5px;
+}.box_number .itemNum{ /*num的input标签(text)样式*/
+	text-align: center;
+	width: 28px;
+}
+.box_delete{
+	width: 12%;
+	height: auto;
+	float: left;
+	text-align: center;
+}.box_delete a{
+	width: 46px;
+	display: block;
+	margin-top: 3px;
+}
+#totalMoney{
+	color: chocolate;
+	font-size: large;
+}

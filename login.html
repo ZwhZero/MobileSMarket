@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<!-- meta使用viewport以确保页面可自由缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 引入 jQuery Mobile 样式 -->
+    	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    	<!-- 引入 jQuery 库 -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/login.js"></script>
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		
+	</head>
+	<body>
+		<!--登录页面-->
+		<div data-role="page" id="loginPage">
+			<div data-role="header">
+				<h1>请登录</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				
+				<!--"ui-field-contain"让标签和表单元素看起来更适应宽屏-->
+				<div class="ui-field-contain">
+					<label for="name">用户名:</label>
+					<input type="text" name="uName" id="lName" placeholder="请输入您的用户名">
+					<br/>
+					<label for="password">密码:</label>
+					<input type="password" name="uPassword" id="lPassword" placeholder="请输入你的密码">
+					<div style="margin-top: 20%;">
+						<button onclick="userLogin()" data-role="button" data-transition="flow">登录</button>
+						<a href="#registerPage" data-role="button" data-transition="flip">注册</a>
+					</div>
+				</div>
+			</div>
+			
+			<div data-role="footer" style="text-align: center"  data-position="fixed">
+				<p>Zero Supermarket @William</p>
+			</div>
+		</div>
+		
+		<!--注册页面-->
+		<div data-role="page" id="registerPage" data-theme="b">
+			<div data-role="header">
+				<h1>欢迎注册</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<form id="registerForm" onsubmit="return false" action="#" method="post">
+					<div class="ui-field-contain">
+						<label for="uName">用户名:</label>
+						<input type="text" name="uName" id="rName">
+						<span id="nameCheck" style="color: #ec6807;"></span>
+						<br/>
+						<label for="uPassword">密码:</label>
+						<input type="password" name="uPassword" id="rPassword">
+						<span id="pwdCheck" style="color: #ec6807;"></span>
+						<!--<br/>
+						<label for="rePassword">重复密码:</label>
+						<input type="password" name="rePassword" id="rePassword">-->
+						<br />
+						<label for="age">年龄:</label>
+						<input type="text" name="age" id="age">
+						
+						<br />
+						<fieldset data-role="controlgroup">
+							<legend>性别：</legend>
+							<label for="male">男</label>
+							<input type="radio" name="sex" id="male" value="男">
+							<label for="female">女</label>
+							<input type="radio" name="sex" id="female" value="女"> 
+						</fieldset>
+						<!--<label for="sex">性别:</label>
+						<input type="text" name="sex" id="sex">-->
+						<br />
+						<label for="phone">手机:</label>
+						<input type="text" name="phone" id="phone" placeholder="请输入11位以内数字">
+						<br />
+						<label for="address">地址:</label>
+						<input type="text" name="address" id="address">
+						<br />
+						<label for="email">邮箱:</label>
+						<input type="text" name="email" id="email">
+						
+						<div style="margin-top: 20%;">
+							<input type="button" value="确认注册" onclick="register()" data-role="button" />
+							<a href="#loginPage" data-role="button" data-transition="flip" data-direction="reverse">直接登录</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div data-role="footer" style="text-align: center"  data-position="fixed">
+				<p>Zero Supermarket @William</p>
+			</div>
+		</div>
+	</body>
+</html>
